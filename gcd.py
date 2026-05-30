@@ -1,8 +1,8 @@
+import math
+
 def gcd(a: int, b: int) -> int:
-    """计算两个正整数的最大公约数（欧几里得算法）"""
-    while b:
-        a, b = b, a % b
-    return a
+    """计算两个整数的最大公约数（使用 math.gcd，高速版本）"""
+    return math.gcd(a, b)
 
 
 if __name__ == "__main__":
